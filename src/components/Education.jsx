@@ -1,1 +1,16 @@
-export default function Education(){return <section id="educacion" aria-labelledby="education-title" className="bg-black px-6 py-24"><article className="mx-auto max-w-6xl"><header><p className="text-sm uppercase tracking-[0.3em] text-zinc-600">Formación</p><h2 id="education-title" className="mt-3 text-4xl font-black text-white md:text-5xl">Educación y aprendizaje.</h2></header><ul className="mt-12 grid gap-4 md:grid-cols-2"><li className="border border-white/10 p-7"><h3 className="text-xl font-bold text-white">Formación en desarrollo de software</h3><p className="mt-3 leading-7 text-zinc-400">Aprendizaje de programación, desarrollo web, bases de datos, Git, metodologías y construcción de proyectos.</p></li><li className="border border-white/10 p-7"><h3 className="text-xl font-bold text-white">Aprendizaje práctico</h3><p className="mt-3 leading-7 text-zinc-400">Práctica con JavaScript, Python, SQL, HTML, CSS y herramientas de desarrollo.</p></li></ul></article></section>}
+export default function Education() {
+  return (
+    <section id="educacion" aria-labelledby="education-title" className="bg-black px-6 py-24">
+      <article className="mx-auto max-w-6xl">
+        <header>
+          <p className="text-sm uppercase tracking-[0.3em] text-zinc-600">Formación</p>
+          <h2 id="education-title" className="mt-3 text-4xl font-black text-white md:text-5xl">Educación y aprendizaje.</h2>
+        </header>
+        <ul className="mt-12 grid gap-4 md:grid-cols-2">
+          <li className="border border-white/10 p-7"><h3 className="text-xl font-bold text-white">Formación en desarrollo de software</h3><p className="mt-3 leading-7 text-zinc-400">Aprendizaje de programación, desarrollo web, bases de datos, Git, metodologías y construcción de proyectos.</p></li>
+          <li className="border border-white/10 p-7"><h3 className="text-xl font-bold text-white">Aprendizaje práctico</h3><p className="mt-3 leading-7 text-zinc-400">Práctica con JavaScript, Python, SQL, HTML, CSS y herramientas de desarrollo.</p></li>
+        </ul>
+      </article>
+    </section>
+  )
+}
