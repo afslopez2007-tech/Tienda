@@ -1,1 +1,26 @@
-export default function Hero(){return <section id="inicio" aria-labelledby="hero-title" className="border-b border-white/10 bg-black"><article className="mx-auto grid min-h-[80vh] max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-[1.4fr_0.6fr]"><header><p className="text-sm font-semibold uppercase tracking-[0.35em] text-zinc-500">Portafolio personal</p><h1 id="hero-title" className="mt-5 text-5xl font-black leading-none tracking-tight text-white sm:text-7xl">Andrés<br/><span className="text-zinc-500">Samboni.</span></h1><p className="mt-7 max-w-2xl text-xl leading-8 text-zinc-400">Estudiante de desarrollo de software, enfocado en aprender, construir proyectos y crear soluciones web.</p><p className="mt-8 flex flex-wrap gap-4"><a href="#proyectos" className="bg-white px-6 py-3 text-sm font-bold uppercase tracking-wider text-black">Ver proyectos</a><a href="#contacto" className="border border-white/20 px-6 py-3 text-sm font-bold uppercase tracking-wider text-white">Contacto</a></p></header><aside className="border border-white/10 bg-zinc-950 p-8"><p className="text-xs uppercase tracking-[0.3em] text-zinc-600">Perfil</p><p className="mt-6 text-3xl font-bold text-white">Desarrollo de software</p><p className="mt-4 leading-7 text-zinc-500">Popayán, Cauca, Colombia</p></aside></article></section>
+export default function Hero() {
+  return (
+    <section id="inicio" aria-labelledby="hero-title" className="border-b border-white/10 bg-black">
+      <article className="mx-auto grid min-h-[80vh] max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-[1.4fr_0.6fr]">
+        <header>
+          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-zinc-500">Portafolio personal</p>
+          <h1 id="hero-title" className="mt-5 text-5xl font-black leading-none tracking-tight text-white sm:text-7xl">
+            Andrés<br /><span className="text-zinc-500">Samboni.</span>
+          </h1>
+          <p className="mt-7 max-w-2xl text-xl leading-8 text-zinc-400">
+            Estudiante de desarrollo de software, enfocado en aprender, construir proyectos y crear soluciones web.
+          </p>
+          <p className="mt-8 flex flex-wrap gap-4">
+            <a href="#proyectos" className="bg-white px-6 py-3 text-sm font-bold uppercase tracking-wider text-black">Ver proyectos</a>
+            <a href="#contacto" className="border border-white/20 px-6 py-3 text-sm font-bold uppercase tracking-wider text-white">Contacto</a>
+          </p>
+        </header>
+        <aside className="border border-white/10 bg-zinc-950 p-8">
+          <p className="text-xs uppercase tracking-[0.3em] text-zinc-600">Perfil</p>
+          <p className="mt-6 text-3xl font-bold text-white">Desarrollo de software</p>
+          <p className="mt-4 leading-7 text-zinc-500">Popayán, Cauca, Colombia</p>
+        </aside>
+      </article>
+    </section>
+  )
+}
