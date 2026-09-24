@@ -1,23 +1,10 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
-import Collections from './components/Collections'
-import Services from './components/Services'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Education from './components/Education'
+import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-
-export default function App() {
-  return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Collections />
-        <Services />
-        <Contact />
-      </main>
-      <Footer />
-    </>
-  )
-}
+export default function App(){return <><Header/><main><Hero/><About/><Skills/><Projects/><Education/><Experience/><Contact/></main><Footer/></>}
