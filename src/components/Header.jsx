@@ -1,18 +1,1 @@
-export default function Header() {
-  return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur">
-      <nav aria-label="Navegación principal" className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-        <a href="#inicio" className="text-xl font-black tracking-[0.25em] text-white">
-          SH STORE
-        </a>
-        <ul className="hidden items-center gap-8 text-sm font-medium text-zinc-300 md:flex">
-          <li><a className="transition hover:text-white" href="#inicio">Inicio</a></li>
-          <li><a className="transition hover:text-white" href="#nosotros">Nosotros</a></li>
-          <li><a className="transition hover:text-white" href="#coleccion">Colección</a></li>
-          <li><a className="transition hover:text-white" href="#servicios">Servicios</a></li>
-          <li><a className="transition hover:text-white" href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-  )
-}
+export default function Header(){return <header className="sticky top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur"><nav aria-label="Navegación principal" className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5"><a href="#inicio" className="font-black tracking-[0.2em] text-white">ANDRÉS SAMBONI</a><ul className="hidden gap-6 text-sm text-zinc-400 md:flex"><li><a href="#sobre-mi" className="hover:text-white">Sobre mí</a></li><li><a href="#habilidades" className="hover:text-white">Habilidades</a></li><li><a href="#proyectos" className="hover:text-white">Proyectos</a></li><li><a href="#educacion" className="hover:text-white">Educación</a></li><li><a href="#contacto" className="hover:text-white">Contacto</a></li></ul></nav></header>}
