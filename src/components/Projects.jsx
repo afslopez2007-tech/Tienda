@@ -1,2 +1,28 @@
-const projects=[['Previnox','Aplicación orientada a apoyar a personas que buscan dejar el consumo de sustancias y fortalecer hábitos para mejorar su vida.','Web · Base de datos · GitHub'],['Digital Pro','Proyecto digital trabajado dentro del proceso de aprendizaje y desarrollo de soluciones tecnológicas.','Desarrollo de software · Web'],['Lista de tareas','Aplicación web para agregar, completar, editar y eliminar tareas y mostrar pendientes.','HTML · CSS · JavaScript'],['Casa inteligente','Proyecto en Python para practicar programación orientada a objetos con dispositivos de una casa inteligente.','Python · POO'],['Bases de datos','Ejercicios de modelado MER y consultas SQL con relaciones, agrupaciones y funciones.','SQL · MER · Bases de datos']]
-export default function Projects(){return <section id="proyectos" aria-labelledby="projects-title" className="bg-zinc-950 px-6 py-24"><header className="mx-auto max-w-6xl"><p className="text-sm uppercase tracking-[0.3em] text-zinc-600">Portafolio</p><h2 id="projects-title" className="mt-3 text-4xl font-black text-white md:text-5xl">Proyectos.</h2></header><ol className="mx-auto mt-12 grid max-w-6xl gap-4 md:grid-cols-2">{projects.map(([name,description,tech],i)=><li key={name} className="border border-white/10 bg-black p-7"><span className="text-sm text-zinc-600">0{i+1}</span><h3 className="mt-5 text-2xl font-bold text-white">{name}</h3><p className="mt-4 leading-7 text-zinc-400">{description}</p><p className="mt-6 text-sm font-semibold text-zinc-600">{tech}</p></li>)}</ol></section>}
+const projects = [
+  ['Previnox', 'Aplicación orientada a apoyar a personas que buscan dejar el consumo de sustancias y fortalecer hábitos para mejorar su vida.', 'Web · Base de datos · GitHub'],
+  ['Digital Pro', 'Proyecto digital trabajado dentro del proceso de aprendizaje y desarrollo de soluciones tecnológicas.', 'Desarrollo de software · Web'],
+  ['Lista de tareas', 'Aplicación web para agregar, completar, editar y eliminar tareas y mostrar pendientes.', 'HTML · CSS · JavaScript'],
+  ['Casa inteligente', 'Proyecto en Python para practicar programación orientada a objetos con dispositivos de una casa inteligente.', 'Python · POO'],
+  ['Bases de datos', 'Ejercicios de modelado MER y consultas SQL con relaciones, agrupaciones y funciones.', 'SQL · MER · Bases de datos']
+]
+
+export default function Projects() {
+  return (
+    <section id="proyectos" aria-labelledby="projects-title" className="bg-zinc-950 px-6 py-24">
+      <header className="mx-auto max-w-6xl">
+        <p className="text-sm uppercase tracking-[0.3em] text-zinc-600">Portafolio</p>
+        <h2 id="projects-title" className="mt-3 text-4xl font-black text-white md:text-5xl">Proyectos.</h2>
+      </header>
+      <ol className="mx-auto mt-12 grid max-w-6xl gap-4 md:grid-cols-2">
+        {projects.map(([name, description, tech], index) => (
+          <li key={name} className="border border-white/10 bg-black p-7">
+            <span className="text-sm text-zinc-600">0{index + 1}</span>
+            <h3 className="mt-5 text-2xl font-bold text-white">{name}</h3>
+            <p className="mt-4 leading-7 text-zinc-400">{description}</p>
+            <p className="mt-6 text-sm font-semibold text-zinc-600">{tech}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}
